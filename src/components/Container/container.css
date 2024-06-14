@@ -1,0 +1,300 @@
+.container {
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--secondary-color);
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.contBtn {
+    margin: 3rem 0;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.contBtn button {
+    padding: 0.5rem 1.5rem;
+    background-color: aliceblue;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contBtn #logIn {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.contBtn #signUp {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.contForm {
+    position: relative;
+    left: 7px;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contForm input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    color: var(--text-color);
+    padding: 0.5rem;
+}
+
+.contForm input::placeholder {
+    color: var(--text-color);
+    transition: .5s;
+}
+
+.logIn form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.loginDiv {
+    display: flex;
+    align-items: center;
+}
+
+.loginDiv span {
+    position: relative;
+    left: -20px;
+}
+
+.loginDiv span i {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.loginDiv span i:hover {
+    scale: 1.2;
+}
+
+.logIn form button {
+    margin-top: 2rem;
+    padding: 0.5rem;
+    background-color: #01b7c5;
+    border: 2px solid var(--text-color);
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.signUp {
+    position: absolute;
+    display: none;
+}
+
+.clicked {
+    display: block;
+}
+
+.signUpDiv {
+    display: flex;
+    align-items: center;
+}
+
+.signUpDiv span {
+    position: relative;
+    left: -20px;
+}
+
+.signUpDiv span i {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.signUpDiv span i:hover {
+    scale: 1.2;
+}
+
+.signUp form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.signUp .signUpGender {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 40%;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.signUp .signUpGender label {
+    cursor: pointer;
+}
+
+.signUp form button {
+    padding: 0.5rem;
+    background-color: #01b7c5;
+    border: 2px solid var(--text-color);
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    left: -5px;
+}
+
+.signUp .supSubmitted {
+    position: absolute;
+    background-color: #01b7c5;
+    border-radius: 10px;
+    z-index: 100;
+    padding: 0.5rem;
+    text-align: center;
+    top: 5%;
+}
+
+.signUp .supSubmitted i {
+    position: absolute;
+    right: 0;
+    top: -5px;
+    background-color: #c53201;
+    border-radius: 50%;
+    scale: 2;
+    cursor: pointer;
+}
+
+.signUp .supSubmitted h2{
+    font-weight: 100;
+}
+
+.bgChange {
+    background: #01b7c5 !important;
+    color: #fff;
+}
+
+.userPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.userTop {
+    margin: 1rem 0;
+}
+
+.userTop img {
+    width: 5rem;
+    height: 5rem;
+    background-color: #20efff;
+    border-radius: 50%;
+    border: 2px solid var(--text-color);
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.userTop h4 {
+    font-size: 2vw;
+}
+
+.userMiddle {
+    margin: 1rem 0;
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+.userBottom {
+    margin-top: 1rem;
+    margin-bottom: 3rem
+}
+
+.userBottom button {
+    padding: 0.5rem 1.2rem;
+    background-color: #01b7c5;
+    margin: 0 0.1rem;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.userBottom button:last-child {
+    background-color: #c53201;
+}
+
+.userAlert{
+    position: absolute;
+    top: 40%;
+    background-color: #dc4817;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.userAlert i{
+    background-color: #c53201;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: -8px;
+    scale: 2;
+    cursor: pointer;
+    transition: .5s;
+}
+.userAlert i:hover{
+    background: #9e2902;
+}
+.userAlert button{
+    padding: 1rem 1.5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    color:#fff;
+    margin: 0 0.4rem;
+    cursor: pointer;
+    transition: .5s;
+}
+.userAlert button:nth-child(2){
+    background: #01b7c5;
+}
+.userAlert button:nth-child(2):hover{
+    background-color: #0496a0;
+}
+.userAlert button:last-child{
+    background: #c53201;
+}
+.userAlert button:last-child:hover{
+    background: #9e2902;
+}
+
+
+.inputError{
+    position: relative;
+    background-color: #c5320115 !important;
+    border-bottom:2px solid #c53201 !important; 
+    animation: inputError .2s 1 ease-in;
+}
+@keyframes inputError {
+    0%,100%{left: 0;}
+    25%{left: -2px;}
+    75%{left: 4px;}
+}
+
+.displayN{
+    display: none;
+}
+.displayF{
+    display: flex;
+}
+.displayB{
+    display: block;
+}
